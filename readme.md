@@ -4,7 +4,7 @@ A web interface that forecasts the infrastructure cost based on the ff. inputs: 
 
 ## Getting Started
 
-These commands will get the project up and running on your local machine for development and testing purposes. Perform the following terminal commands on your `LAMP`/`XAMPP`/`WAMP`'s `www` or `htdocs` directory:
+To clone the project, do the following command on your `LAMP`/`XAMPP`/`WAMP`'s `www` or `htdocs` directory:
 
 ```
 git clone https://github.com/michaelignacio/cost-calculator.git
