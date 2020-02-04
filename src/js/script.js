@@ -35,7 +35,7 @@ form.addEventListener('submit', function(e) {
 
 /**
  * Fetches resource using the user input
- * @return json JSON output from the fetch call
+ * @return .json JSON output from the fetch call
  */
   function fetchData(url) {
     return fetch(url, {
@@ -52,6 +52,10 @@ form.addEventListener('submit', function(e) {
   });
 });
 
+/**
+ * JavaScript form validation
+ * @return bool Returns whether form input is valid
+ */
 function isNumberKey(evt){
     var charCode = (evt.which) ? evt.which : evt.keyCode
     if (charCode > 31 && (charCode < 48 || charCode > 57))
