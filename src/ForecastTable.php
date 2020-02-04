@@ -18,6 +18,7 @@ class ForecastTable
 		$this->_growth = $growth;
 		$this->_months = $months;
 		$this->startingMonth = new DateTime();
+		$this->basePlusGrowth = $this->_studies;
 		$this->multiplier = 1;
 		$this->table = array();
 	}
@@ -28,16 +29,17 @@ class ForecastTable
 	 */
 	public function populateTable() {
 		for ($i=0; $i<$this->_months; $i++) {
-			if ( $i===0 ) {
+			if ( $i<1 ) {
 				// Forecast for the starting month
 				$month = $this->startingMonth;
 			} else {
 				// Forecast for the remaining months considering study growth
 				$month = $this->startingMonth->add(new DateInterval('P1M'));
 				$this->multiplier = 1 + ($this->_growth / 100);
+				$this->basePlusGrowth *= $this->multiplier;
 			}
 
-			$row = new Forecast( $this->_studies * $month->format('t') * $this->multiplier );
+			$row = new Forecast( $this->basePlusGrowth * $month->format('t') * $this->multiplier );
 
 			$forecast = $row->getForecast();
 			$this->table[$i]['month'] = $month->format('M Y');
