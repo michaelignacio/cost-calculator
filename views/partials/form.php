@@ -5,21 +5,21 @@
 				<div class="column">
 					<div class="field">
 						<div class="control">
-							<input class="input is-large" type="number" name="studies" placeholder="# of studies per day..." onkeypress="return isNumberKey(event)" required>
+							<input class="input is-large" type="number" name="studies" placeholder="# of studies per day..." min="1" onkeypress="return isNumberKey(event)" required>
 						</div>
 					</div>
 				</div>
 				<div class="column">
 					<div class="field">
 						<div class="control">
-							<input class="input is-large" type="number" name="growth" placeholder="Growth in % per month..." onkeypress="return isNumberKey(event)" required>
+							<input class="input is-large" type="number" name="growth" placeholder="Growth in % per month..." min="0" onkeypress="return isNumberKey(event)" required>
 						</div>
 					</div>
 				</div>
 				<div class="column">
 					<div class="field">
 						<div class="control">
-							<input class="input is-large" type="number" name="months" placeholder="# of months to forecast..." onkeypress="return isNumberKey(event)" required>
+							<input class="input is-large" type="number" name="months" placeholder="# of months to forecast..." min="1" onkeypress="return isNumberKey(event)" required>
 						</div>
 					</div>
 				</div>
