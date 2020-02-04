@@ -12,6 +12,8 @@ git clone https://github.com/michaelignacio/cost-calculator.git
 
 Make sure your webserver is running, and go to [localhost/lifetrack](http://localhost/lifetrack/) to view the web interface.
 
+You can also access the Heroku app here: <a target="_blank" href="http://quiet-escarpment-68159.herokuapp.com/">http://quiet-escarpment-68159.herokuapp.com/</a>
+
 ## Built With
 
 * HTML5, CSS3, PHP, JavaScript
