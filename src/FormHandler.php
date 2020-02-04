@@ -5,7 +5,8 @@ require_once('ForecastTable.php');
  * @author Michael Ignacio <mikelignacio@gmail.com>
  * @link http://github.com/michaelignacio/cost-calculator
  */
-class FormHandler {
+class FormHandler
+{
 	/**
 	 * Constructs the FormHandler object
      * @param int $studies Starting number of studies for the forecast

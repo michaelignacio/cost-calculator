@@ -5,7 +5,8 @@ require_once('Forecast.php');
  * @author Michael Ignacio <mikelignacio@gmail.com>
  * @link http://github.com/michaelignacio/cost-calculator
  */
-class ForecastTable {
+class ForecastTable
+{
 	/**
 	 * Constructs the ForecastTable object
      * @param int $studies Number of studies for the forecast

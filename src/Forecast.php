@@ -6,7 +6,8 @@ define('COST_OF_STORAGE', .10);
  * @author Michael Ignacio <mikelignacio@gmail.com>
  * @link http://github.com/michaelignacio/cost-calculator
  */
-class Forecast {
+class Forecast
+{
 	/**
 	 * Constructs the Forecast object
 	 * @param int $studies Number of studies for the forecast
