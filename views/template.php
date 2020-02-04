@@ -8,8 +8,10 @@
 </head>
 <body>
 	<?php require_once('partials/hero.php'); ?>
-	<?php require_once('partials/form.php'); ?>
-	<?php require_once('partials/table.php'); ?>
+	<div class="form-results">
+		<?php require_once('partials/form.php'); ?>
+		<?php require_once('partials/table.php'); ?>
+	</div>
 
 	<script type="text/javascript" src="src/js/script.js"></script>
 </body>

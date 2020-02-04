@@ -1,4 +1,15 @@
 /**
+ * JavaScript form validation
+ * @return bool Returns whether form input is valid
+ */
+function isNumberKey(evt){
+    var charCode = (evt.which) ? evt.which : evt.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}
+
+/**
  * Constructs the table row
  * @return html Table row that contains the elements
  */
@@ -50,15 +61,8 @@ form.addEventListener('submit', function(e) {
       table.appendChild(row);
     });
   });
-});
 
-/**
- * JavaScript form validation
- * @return bool Returns whether form input is valid
- */
-function isNumberKey(evt){
-    var charCode = (evt.which) ? evt.which : evt.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-        return false;
-    return true;
-}
+  var elmnt = document.getElementById('table');
+  elmnt.scrollIntoView();
+  console.log('scrolled');
+});
