@@ -61,8 +61,4 @@ form.addEventListener('submit', function(e) {
       table.appendChild(row);
     });
   });
-
-  var elmnt = document.getElementById('table');
-  elmnt.scrollIntoView();
-  console.log('scrolled');
 });
