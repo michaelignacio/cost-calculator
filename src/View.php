@@ -8,7 +8,7 @@ class View {
 	 * Constructs the View object
 	 */
 	public function __construct() {
-		$this->template = 'public/template.php';
+		$this->template = 'views/template.php';
 	}
 
 	/**
