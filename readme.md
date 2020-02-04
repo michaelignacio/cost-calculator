@@ -18,7 +18,7 @@ Make sure your webserver is running, and go to [localhost/lifetrack](http://loca
 * [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - The Fetch API provides an interface for fetching resources (including across the network)
 * [Bulma](https://bulma.io/) - Bulma is a free, open source CSS framework based on Flexbox
 
-You can use your local server of choice, but I used [LAMP stack built w/ Docker Compose](https://github.com/sprintcube/docker-compose-lamp).
+You can use your local server of choice - personally I used [LAMP stack built w/ Docker Compose](https://github.com/sprintcube/docker-compose-lamp).
 
 
 ## Authors
